@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f4f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 32px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 32px 48px;
+  gap: 24px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: #202842;
+}
+
+.container .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.container .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container .price {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.container .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.box .features p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.box button {
+  width: 160px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #202842;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.focused-box {
+  background-color: #202842;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 34px 50px;
+  transition-duration: 0.2s;
+}
+
+.focused-box button {
+  color: #202842;
+  background-color: white;
+  transition-duration: 0.2s;
+}
